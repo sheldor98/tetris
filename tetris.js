@@ -189,12 +189,6 @@ function rotate(matrix, dir) {
 	
 }
 
-
-function play(){
-let audio = new Audio('ThemeA.mp3');
-audio.play();
-};
-
 let dropCounter = 0;
 let dropInterval = 1000;
 
@@ -225,7 +219,7 @@ const colors = [
 	'olive',
 	'#00FFFF',
 	
-]
+];
 
 const arena = createMatrix(12, 20);
 
@@ -233,7 +227,7 @@ const player = {
 	pos: {x: 0, y: 0},
 	matrix: null,
 	score: 0,
-}
+};
 
 document.addEventListener('keydown', event => {
 	if (event.keyCode === 37) {
@@ -252,6 +246,4 @@ document.addEventListener('keydown', event => {
 playerReset();
 updateScore();
 update();
-
-//steuerung --> pfeiltasten zum bewegen; q/w Taste zum rotieren der Formen
 
